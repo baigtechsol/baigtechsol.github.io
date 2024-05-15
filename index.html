@@ -7,16 +7,20 @@
     <title>CV - Mirza Zeeshan Baig</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: #f4f4f4;
+            color: #333;
             line-height: 1.6;
         }
 
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1,
@@ -27,6 +31,7 @@
         h6 {
             margin: 0 0 10px;
             padding: 0;
+            color: #0056b3;
         }
 
         .header,
@@ -45,6 +50,42 @@
 
         .contact-info p {
             margin: 5px 0;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .section ul li {
+            margin: 5px 0;
+        }
+
+        .portfolio-projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-project {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+            padding: 10px;
+            background: #eef;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-project h4 {
+            margin-top: 0;
+        }
+
+        .link {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -65,9 +106,12 @@
 
         <div class="section contact-info">
             <h3>Contact</h3>
-            <p>Email: <a href="mailto:Zeshanbaig786@gmail.com">Zeshanbaig786@gmail.com</a></p>
+            <p>Email: <a href="mailto:Zeshanbaig786@gmail.com" class="link">Zeshanbaig786@gmail.com</a></p>
             <p>Phone: +92-307-6454213</p>
             <p>Location: Islamabad, Pakistan</p>
+            <p>Fiverr: <a href="https://www.fiverr.com/zeshanbaig786" class="link">fiverr.com/zeshanbaig786</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/zeshanbaig786/"
+                    class="link">linkedin.com/in/zeshanbaig786</a></p>
         </div>
 
         <div class="section">
@@ -112,12 +156,11 @@
 
         <div class="section">
             <h3>References</h3>
-            <p>Degree verification at <a
-                    href="http://nu.edu.pk/Student#DegreeVerify">http://nu.edu.pk/Student#DegreeVerify</a></p>
+            <p>Degree verification at <a href="http://nu.edu.pk/Student#DegreeVerify"
+                    class="link">http://nu.edu.pk/Student#DegreeVerify</a></p>
             <p>Reg No# 07-0508</p>
-            <p>Scholarship Awardees at <a
-                    href="http://nu.edu.pk/Campus/ScholarshipAwardees/5">http://nu.edu.pk/Campus/ScholarshipAwardees/5</a>
-            </p>
+            <p>Scholarship Awardees at <a href="http://nu.edu.pk/Campus/ScholarshipAwardees/5"
+                    class="link">http://nu.edu.pk/Campus/ScholarshipAwardees/5</a></p>
         </div>
 
         <div class="section">
@@ -147,6 +190,19 @@
                 <li>Scraping</li>
                 <li>Android development using Android Studio</li>
             </ul>
+        </div>
+
+        <div class="section">
+            <h3>Portfolio Projects</h3>
+            <div class="portfolio-projects">
+                <!-- Example Project -->
+                <div class="portfolio-project">
+                    <h4>Project Title</h4>
+                    <p>Project description goes here. Briefly describe the project and its key features.</p>
+                    <p><a href="PROJECT_LINK" class="link">View Project</a></p>
+                </div>
+                <!-- Repeat similar blocks for each project -->
+            </div>
         </div>
     </div>
 </body>
